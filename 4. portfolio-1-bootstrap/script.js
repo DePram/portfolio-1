@@ -24,3 +24,14 @@ form.addEventListener("submit", (e) => {
     })
     .catch((error) => console.error("Error!", error.message));
 });
+
+AOS.init({
+  once: true,
+  duration: 1500,
+});
+
+gsap.registerPlugin(TextPlugin);
+gsap.to(".lead", { duration: 2, delay: 1, text: "Student | Ordinary Person" });
+gsap.from(".jumbotron img", { duration: 1, opacity: 0, rotateY: 360 });
+gsap.from(".navbar", { duration: 1, y: "-100%", opacity: 0, ease: "bounce" });
+gsap.from(".display-4", { duration: 1, x: "-50", opacity: 0, delay: 0.5 });

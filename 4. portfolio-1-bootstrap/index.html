@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>My Portfolio | Dode Pram</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -39,7 +41,7 @@
     <section class="jumbotron text-center">
       <img src="image.jpg" alt="Dode Pram" width="200px" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Dode Pram</h1>
-      <p class="lead">Student | Ordinary Person</p>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
@@ -59,10 +61,10 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quas id. At est nisi quo eum incidunt aliquid, cupiditate consequuntur.</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left" data-aos-delay="200">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae error accusantium accusamus natus. Molestias veniam aliquid sint tempore necessitatibus quidem enim dolor praesentium consequuntur porro.</p>
           </div>
         </div>
@@ -87,7 +89,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left">
               <img src="project/1.jpg" class="card-img-top" alt="project-1" />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -97,7 +99,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-delay="100">
               <img src="project/2.jpg" class="card-img-top" alt="project-1" />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -107,7 +109,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-delay="200">
               <img src="project/3.jpg" class="card-img-top" alt="project-1" />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -117,7 +119,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-delay="300">
               <img src="project/4.jpg" class="card-img-top" alt="project-1" />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -127,7 +129,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-delay="400">
               <img src="project/5.jpg" class="card-img-top" alt="project-1" />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -209,6 +211,9 @@
     <!-- akhr footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
